@@ -3,46 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RupayVibe - Privacy Policy & Terms of Service</title>
+  <title>RupayVibe - Earn Rewards & Surveys</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-    h1, h2 { color: #0f766e; }
-    ul { margin-top: 8px; }
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 30px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+    header { background: #0f766e; color: white; padding: 24px; border-radius: 10px; }
+    .card { border: 1px solid #ddd; padding: 20px; border-radius: 10px; margin: 24px 0; background: #f9fafb; }
+    input[type="text"], input[type="email"] { width: 100%; padding: 10px; margin: 8px 0 14px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+    button { background: #0f766e; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+    h2, h3 { color: #0f766e; }
+    a { color: #0f766e; font-weight: bold; }
   </style>
 </head>
 <body>
-  <h1>RupayVibe - Privacy Policy & Terms of Service</h1>
-  <p><strong>Effective Date:</strong> November 2026 | <strong>Data Controller / Contact:</strong> rupayvibe.official@gmail.com</p>
+  <header>
+    <h1>RupayVibe</h1>
+    <p>Complete market research surveys and earn rewards on Android.</p>
+    <p><strong>Contact:</strong> rupayvibe.official@gmail.com</p>
+  </header>
 
-  <h2>1. Privacy Policy</h2>
-  <p>RupayVibe collects basic account details (Name, Email address, and Firebase User ID) via Google Sign-In solely to manage user wallets, credit earned rewards, prevent fraud, and process redemptions. We integrate trusted third-party survey and advertising partners (including TheoremReach and Google AdMob) that may process device identifiers (such as Android Advertising ID) and IP addresses to deliver relevant surveys and prevent duplicate/fraudulent responses. We do not sell your personal information to third parties.</p>
+  <div class="card" id="register">
+    <h2>User Registration & Pre-Launch Access</h2>
+    <form onsubmit="event.preventDefault(); alert('Thank you! Your registration has been recorded.');">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
 
-  <h3>Data Retention & Security</h3>
-  <p>We retain user account and transaction data only as long as your account remains active or as required to fulfill reward redemptions and prevent fraud. All data is transmitted securely over HTTPS and stored with strict access controls.</p>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
 
-  <h3>GDPR Data Protection Rights (European Union / EEA Users)</h3>
-  <p>If you are a resident of the European Economic Area (EEA), you have the following data protection rights under the General Data Protection Regulation (GDPR):</p>
-  <ul>
-    <li><strong>Right to Access:</strong> You have the right to request copies of your personal data.</li>
-    <li><strong>Right to Rectification:</strong> You have the right to request that we correct any inaccurate or incomplete information.</li>
-    <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> You have the right to request the deletion of your account and personal data.</li>
-    <li><strong>Right to Restrict or Object to Processing:</strong> You have the right to object to or request restriction of how we process your personal data.</li>
-    <li><strong>Right to Data Portability:</strong> You have the right to request transfer of your collected data to another organization or directly to you.</li>
-    <li><strong>Right to Withdraw Consent:</strong> Where processing is based on consent, you may withdraw your consent at any time.</li>
-  </ul>
+      <div style="margin: 12px 0;">
+        <input type="checkbox" id="consent" required>
+        <label for="consent">
+          I agree to the <a href="#terms">Terms of Service (TOS)</a> and <a href="#privacy">Privacy Policy (PP)</a>, and consent to the processing of my data for survey rewards.
+        </label>
+      </div>
 
-  <h3>CCPA Privacy Rights (California Residents)</h3>
-  <p>Under the California Consumer Privacy Act (CCPA), California residents have the following rights:</p>
-  <ul>
-    <li><strong>Right to Know & Access:</strong> You may request disclosure of the categories and specific pieces of personal data we have collected about you.</li>
-    <li><strong>Right to Delete:</strong> You may request deletion of personal information collected from you, subject to legal exceptions.</li>
-    <li><strong>Right to Opt-Out of Sale:</strong> RupayVibe does <strong>not</strong> sell personal data; however, you have the right to direct us not to sell your personal information.</li>
-    <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising any of your CCPA privacy rights.</li>
-  </ul>
+      <button type="submit">Register / Sign Up</button>
+    </form>
+  </div>
 
-  <p>To exercise any GDPR or CCPA rights, please contact us at <strong>rupayvibe.official@gmail.com</strong>. We will respond to all verified requests within 30 days.</p>
+  <hr>
 
-  <h2>2. Terms of Service</h2>
-  <p>Users must provide honest and accurate responses in surveys. Automated bots, VPNs, emulators, multiple accounts, or fraudulent activity will result in immediate account suspension and forfeiture of rewards. Earned coins can be redeemed once the minimum threshold is reached.</p>
+  <section id="privacy">
+    <h2>1. Privacy Policy (PP)</h2>
+    <p><strong>Effective Date:</strong> November 2026 | <strong>Data Controller:</strong> rupayvibe.official@gmail.com</p>
+    <p>RupayVibe collects basic account details (Name, Email address, and Firebase User ID) via Google Sign-In or registration solely to manage user wallets, credit earned rewards, prevent fraud, and process redemptions. We integrate trusted third-party survey and advertising partners (including TheoremReach and Google AdMob) that may process device identifiers (such as Android Advertising ID) and IP addresses to deliver relevant surveys and prevent duplicate/fraudulent responses. We do not sell your personal information to third parties.</p>
+
+    <h3>Data Retention & Security</h3>
+    <p>We retain user account and transaction data only as long as your account remains active or as required to fulfill reward redemptions and prevent fraud. All data is transmitted securely over HTTPS and stored with strict access controls.</p>
+
+    <h3>GDPR Data Protection Rights (European Union / EEA Users)</h3>
+    <ul>
+      <li><strong>Right to Access:</strong> Request copies of your personal data.</li>
+      <li><strong>Right to Rectification:</strong> Request correction of inaccurate information.</li>
+      <li><strong>Right to Erasure:</strong> Request deletion of your account and personal data.</li>
+      <li><strong>Right to Restrict or Object to Processing:</strong> Object to or restrict processing of your personal data.</li>
+      <li><strong>Right to Data Portability:</strong> Request transfer of your collected data.</li>
+      <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time by contacting us.</li>
+    </ul>
+
+    <h3>CCPA Privacy Rights (California Residents)</h3>
+    <ul>
+      <li><strong>Right to Know & Access:</strong> Request disclosure of personal data collected about you.</li>
+      <li><strong>Right to Delete:</strong> Request deletion of personal information collected from you.</li>
+      <li><strong>Right to Opt-Out of Sale:</strong> RupayVibe does not sell personal data.</li>
+      <li><strong>Right to Non-Discrimination:</strong> No discrimination for exercising CCPA rights.</li>
+    </ul>
+    <p>To exercise GDPR/CCPA rights, contact <strong>rupayvibe.official@gmail.com</strong>.</p>
+  </section>
+
+  <section id="terms">
+    <h2>2. Terms of Service (TOS)</h2>
+    <p>Users must provide honest and accurate responses in surveys. Automated bots, VPNs, emulators, multiple accounts, or fraudulent activity will result in immediate account suspension and forfeiture of rewards. Earned coins can be redeemed once the minimum threshold is reached.</p>
+  </section>
 </body>
 </html>
