@@ -1,79 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RupayVibe - Earn Rewards & Surveys</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RupayVibe - Rewards & Surveys Platform</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 30px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-    header { background: #0f766e; color: white; padding: 24px; border-radius: 10px; }
-    .card { border: 1px solid #ddd; padding: 20px; border-radius: 10px; margin: 24px 0; background: #f9fafb; }
-    input[type="text"], input[type="email"] { width: 100%; padding: 10px; margin: 8px 0 14px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
-    button { background: #0f766e; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; }
-    h2, h3 { color: #0f766e; }
-    a { color: #0f766e; font-weight: bold; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: #f4f7f6; color: #222; line-height: 1.6; }
+    header { background: linear-gradient(135deg, #0d6e4c, #139a6a); color: #fff; padding: 50px 20px; text-align: center; }
+    header h1 { font-size: 2.4rem; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; max-width: 650px; margin: 0 auto; opacity: 0.95; }
+    nav { background: #094f36; padding: 12px; text-align: center; }
+    nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 0.95rem; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 960px; margin: 30px auto; padding: 0 20px; }
+    .card { background: #fff; border-radius: 10px; padding: 28px; margin-bottom: 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    h2 { color: #0d6e4c; margin-bottom: 14px; font-size: 1.45rem; border-bottom: 2px solid #e6f2ed; padding-bottom: 8px; }
+    h3 { color: #1b4332; margin: 14px 0 6px; font-size: 1.1rem; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 8px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; margin-top: 15px; }
+    .feature-box { background: #f0f9f5; border-left: 4px solid #139a6a; padding: 16px; border-radius: 6px; }
+    footer { background: #111; color: #bbb; text-align: center; padding: 25px 15px; font-size: 0.9rem; margin-top: 40px; }
+    footer a { color: #4ade80; text-decoration: none; }
   </style>
 </head>
 <body>
+
   <header>
     <h1>RupayVibe</h1>
-    <p>Complete market research surveys and earn rewards on Android.</p>
-    <p><strong>Contact:</strong> rupayvibe.official@gmail.com</p>
+    <p>Share your opinions through trusted market research surveys, complete simple daily activities, and earn digital rewards transparently.</p>
   </header>
 
-  <div class="card" id="register">
-    <h2>User Registration & Pre-Launch Access</h2>
-    <form onsubmit="event.preventDefault(); alert('Thank you! Your registration has been recorded.');">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" placeholder="Enter your name" required>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms of Service</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" placeholder="Enter your email" required>
+  <div class="container">
 
-      <div style="margin: 12px 0;">
-        <input type="checkbox" id="consent" required>
-        <label for="consent">
-          I agree to the <a href="#terms">Terms of Service (TOS)</a> and <a href="#privacy">Privacy Policy (PP)</a>, and consent to the processing of my data for survey rewards.
-        </label>
+    <section id="about" class="card">
+      <h2>About RupayVibe</h2>
+      <p>RupayVibe is an online consumer rewards and market research engagement platform designed for mobile users in India. We connect everyday users with verified global market research partners so brands can gather genuine consumer feedback while users earn reward coins for their valuable time.</p>
+      <div class="grid">
+        <div class="feature-box">
+          <h3>Verified Surveys</h3>
+          <p>Participate in short, legitimate market research questionnaires tailored to your demographic profile.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Transparent Coin Wallet</h3>
+          <p>Track every earned coin in real time (100 Coins = ₹1.00 INR) with clear reward milestones.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Referral Rewards</h3>
+          <p>Invite friends to join RupayVibe and earn mutual bonus coins once they sign up and participate.</p>
+        </div>
       </div>
+    </section>
 
-      <button type="submit">Register / Sign Up</button>
-    </form>
+    <section id="how-it-works" class="card">
+      <h2>How It Works</h2>
+      <ul>
+        <li><strong>1. Create a Free Profile:</strong> Users register inside the RupayVibe Android application using Google Sign-In.</li>
+        <li><strong>2. Complete Surveys & Activities:</strong> Browse available partner surveys, share honest responses, and earn instant reward coins upon successful completion.</li>
+        <li><strong>3. Redeem Rewards:</strong> Once the minimum redemption threshold is reached, users can request payouts directly via supported digital payment methods (UPI).</li>
+      </ul>
+    </section>
+
+    <section id="privacy" class="card">
+      <h2>Privacy Policy & Data Consent</h2>
+      <p><strong>Effective Date:</strong> November 2026</p>
+      <p>Your privacy is important to us. RupayVibe collects only the minimum information required to operate the rewards wallet and match users with relevant surveys:</p>
+      <ul>
+        <li><strong>Information Collected:</strong> Name, email address, unique user identifier (UID), device advertising ID, and basic demographic details provided voluntarily for survey matching.</li>
+        <li><strong>Third-Party Survey & Ad Partners:</strong> We partner with reputable market research providers (such as TheoremReach) and advertising networks (Google AdMob). When you participate in a survey, anonymized demographic and session identifiers are shared strictly to qualify and credit your survey rewards.</li>
+        <li><strong>User Consent & Control:</strong> Participation in surveys is completely voluntary. Users may stop using the platform or request deletion of their account data at any time by contacting our support team.</li>
+        <li><strong>Data Security:</strong> All user balances and records are secured using encrypted cloud infrastructure (Google Firebase). We never sell personal contact details to unauthorized third parties.</li>
+      </ul>
+    </section>
+
+    <section id="terms" class="card">
+      <h2>Terms of Service</h2>
+      <ul>
+        <li>Users must provide accurate, truthful responses during market research surveys. Automated bots, VPN usage, or fraudulent multi-account activity will result in account suspension.</li>
+        <li>Survey availability and reward amounts depend on partner qualification criteria.</li>
+        <li>Payout requests are verified and processed within 24–72 business hours.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact & Support</h2>
+      <p>For partnership inquiries, data deletion requests, or user support, please reach out to us:</p>
+      <p><strong>Email:</strong> <a href="mailto:rupayvibe.official@gmail.com">rupayvibe.official@gmail.com</a></p>
+      <p><strong>Location:</strong> Tamil Nadu, India</p>
+    </section>
+
   </div>
 
-  <hr>
+  <footer>
+    <p>&copy; 2026 RupayVibe. All Rights Reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms</a></p>
+  </footer>
 
-  <section id="privacy">
-    <h2>1. Privacy Policy (PP)</h2>
-    <p><strong>Effective Date:</strong> November 2026 | <strong>Data Controller:</strong> rupayvibe.official@gmail.com</p>
-    <p>RupayVibe collects basic account details (Name, Email address, and Firebase User ID) via Google Sign-In or registration solely to manage user wallets, credit earned rewards, prevent fraud, and process redemptions. We integrate trusted third-party survey and advertising partners (including TheoremReach and Google AdMob) that may process device identifiers (such as Android Advertising ID) and IP addresses to deliver relevant surveys and prevent duplicate/fraudulent responses. We do not sell your personal information to third parties.</p>
-
-    <h3>Data Retention & Security</h3>
-    <p>We retain user account and transaction data only as long as your account remains active or as required to fulfill reward redemptions and prevent fraud. All data is transmitted securely over HTTPS and stored with strict access controls.</p>
-
-    <h3>GDPR Data Protection Rights (European Union / EEA Users)</h3>
-    <ul>
-      <li><strong>Right to Access:</strong> Request copies of your personal data.</li>
-      <li><strong>Right to Rectification:</strong> Request correction of inaccurate information.</li>
-      <li><strong>Right to Erasure:</strong> Request deletion of your account and personal data.</li>
-      <li><strong>Right to Restrict or Object to Processing:</strong> Object to or restrict processing of your personal data.</li>
-      <li><strong>Right to Data Portability:</strong> Request transfer of your collected data.</li>
-      <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time by contacting us.</li>
-    </ul>
-
-    <h3>CCPA Privacy Rights (California Residents)</h3>
-    <ul>
-      <li><strong>Right to Know & Access:</strong> Request disclosure of personal data collected about you.</li>
-      <li><strong>Right to Delete:</strong> Request deletion of personal information collected from you.</li>
-      <li><strong>Right to Opt-Out of Sale:</strong> RupayVibe does not sell personal data.</li>
-      <li><strong>Right to Non-Discrimination:</strong> No discrimination for exercising CCPA rights.</li>
-    </ul>
-    <p>To exercise GDPR/CCPA rights, contact <strong>rupayvibe.official@gmail.com</strong>.</p>
-  </section>
-
-  <section id="terms">
-    <h2>2. Terms of Service (TOS)</h2>
-    <p>Users must provide honest and accurate responses in surveys. Automated bots, VPNs, emulators, multiple accounts, or fraudulent activity will result in immediate account suspension and forfeiture of rewards. Earned coins can be redeemed once the minimum threshold is reached.</p>
-  </section>
 </body>
 </html>
